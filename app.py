@@ -61,8 +61,8 @@ def generate_test_cases(source_table, target_table):
 # Streamlit UI
 st.title("Test Case Generator")
 
-source = st.text_input("Enter the source table name:")
-target = st.text_input("Enter the target table name:")
+source = st.text_input("Enter the source table:")
+target = st.text_input("Enter the target table:")
 
 if st.button("Generate Test Cases"):
     if not source or not target:
